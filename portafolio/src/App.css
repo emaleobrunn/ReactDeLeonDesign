@@ -1,0 +1,297 @@
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+ 
+}
+
+
+/* General Styles */
+
+.menu{
+  display: none
+}
+
+/*
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+header .logo {
+  height: 40px;
+}
+
+
+nav{
+   text-align: center;
+
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 8px 12px;
+ font-family: "Montserrat", sans-serif;
+}
+
+header ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+section {
+  padding: 60px 20px;
+  
+}
+#a{
+  border: #333;
+}*/
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content:center ;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--very-light-pink);
+}
+.logo {
+  padding-top: 9px;
+  height: 40px;
+}
+.navbar-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.navbar-left {
+  display: flex;
+}
+.navbar-left ul {
+  margin-left: 12px;
+}
+.navbar-left ul li a {
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+}
+.navbar-left ul li a:hover
+ {
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+}
+
+@media (max-width: 640px) {
+  .menu {
+    display: block;
+    height: 40px;
+  }
+  .logo{
+    padding-top: 0px;
+    
+  }
+  .nav{
+      display: flex;
+      justify-content: center;
+      align-items:normal;
+     
+  }
+  .navbar-left ul {
+    display: none;
+    
+  
+  }
+ 
+}
+/* Hero Section */
+#hero {
+ /* background: url('./assets/logotf.png') no-repeat center center/cover;*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:rgb(255, 255, 255, 0.5);
+  border: black;
+  border-radius: 1px;
+  background-image: url("C:\AplicacionesReact\TomiFer\my-app\src\assets\bannertomas.png");
+  background-size:90%;
+  background-position: right;
+  background-position-x: center;
+}
+
+#hero .hero-content {
+  max-width: 800px;
+}
+
+#hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+#hero p {
+  font-size: 1.5em;
+}
+/*Presentacion*/
+#divPresentacion{
+
+  display: grid;
+  height: auto;
+  color: white;
+  background-color: white;
+}
+/**/
+/* About Section */
+#about {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#about h2 {
+  margin-bottom: 1em;
+}
+
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+#projects {
+  text-align: center;
+}
+
+#projects .project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#projects .project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: calc(25% - 20px);
+  margin: 10px;
+  text-align: left;
+}
+
+#projects .project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+#projects .project-card h3 {
+  margin: 0;
+  padding: 15px;
+  font-size: 1.2em;
+  background-color: #333;
+  color: #fff;
+}
+
+#projects .project-card p {
+  padding: 0 15px 15px;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 1em;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+#contact button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+footer .social-links {
+  margin: 10px 0;
+}
+
+footer .social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .social-links a:hover {
+  text-decoration: underline;
+}
