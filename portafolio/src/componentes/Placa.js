@@ -1,5 +1,5 @@
 import React from 'react'
-import imagen1 from './imagen1.jpeg'
+import imagen1 from '../assets/imagen1.jpeg'
 import imagen2 from '../assets/imagen2.jpeg'
 import '../Imagen.css'
 
